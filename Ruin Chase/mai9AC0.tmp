@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://3o6i128siadi"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_ou1jb"]
+[ext_resource type="PackedScene" uid="uid://bh0llvtt314wb" path="res://adventure_player.tscn" id="2_kr5hq"]
+[ext_resource type="PackedScene" uid="uid://b370gslfjefx0" path="res://floor.tscn" id="4_k13l2"]
+[ext_resource type="PackedScene" uid="uid://cp86mgg3bxtti" path="res://beast_player.tscn" id="4_w2aus"]
+[ext_resource type="PackedScene" uid="uid://j7hwpjcjukoh" path="res://obstacle.tscn" id="6_nssqh"]
+
+[sub_resource type="Curve2D" id="Curve2D_jkf18"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -74.6667, 520, 0, 0, 0, 0, -74.6667, 520, 0, 0, 0, 0, -74.6667, 64)
+}
+point_count = 3
+
+[node name="Main" type="Node"]
+script = ExtResource("1_ou1jb")
+obstacle_scene = ExtResource("6_nssqh")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(572, 320)
+
+[node name="Floor" parent="." instance=ExtResource("4_k13l2")]
+position = Vector2(568, 544)
+
+[node name="Ceiling" parent="." instance=ExtResource("4_k13l2")]
+position = Vector2(568, 32)
+
+[node name="Adventure Player" parent="." instance=ExtResource("2_kr5hq")]
+position = Vector2(544, 368)
+scale = Vector2(0.75, 0.75)
+
+[node name="Beast Player" parent="." instance=ExtResource("4_w2aus")]
+position = Vector2(872, 344)
+scale = Vector2(0.65, 0.65)
+
+[node name="ObstacleTimer" type="Timer" parent="."]
+wait_time = 1.5
+
+[node name="ObstaclePath" type="Path2D" parent="."]
+position = Vector2(48, 0)
+scale = Vector2(0.75, 1)
+curve = SubResource("Curve2D_jkf18")
+
+[node name="ObstacleSpawnLocation" type="PathFollow2D" parent="ObstaclePath"]
+position = Vector2(-74.6667, 520.082)
+
+[connection signal="timeout" from="ObstacleTimer" to="." method="_on_obstacle_timer_timeout"]

@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://cp86mgg3bxtti"]
+
+[ext_resource type="Texture2D" uid="uid://v0uuxydb7mw" path="res://icon.svg" id="1_cxk3c"]
+[ext_resource type="Script" path="res://beast_player.gd" id="1_vhg03"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m5siw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cxk3c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_foule"]
+radius = 131.0
+height = 310.0
+
+[node name="Beast Player" type="CharacterBody2D"]
+position = Vector2(0, -156)
+floor_constant_speed = true
+floor_block_on_wall = false
+script = ExtResource("1_vhg03")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.499989, 1)
+scale = Vector2(2.05469, 2.40625)
+sprite_frames = SubResource("SpriteFrames_m5siw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_foule")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, 1.99999)
+scale = Vector2(13.3, 15.3)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_foule")
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
