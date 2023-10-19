@@ -32,3 +32,10 @@ func _on_obstacle_timer_timeout():
 
 	# Spawn the obstacle by adding it to the Main scene.
 	add_child(obstacle)
+
+
+func _game_over_adventurer():
+	pass
+	
+func _game_over_beast():
+	pass

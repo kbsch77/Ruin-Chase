@@ -22,9 +22,11 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func _on_rigid_body_2d_area_entered(area):
-	pass # Replace with function body.
+func _on_area_2d_area_entered(area):
+	hide()
+	
+	position.x += 64
 
-func _on_visible_on_screen_notifier_2d_screen_exited():
-	# Beast Player loses
-	pass
+# might need to change as a timed "grace period"
+func _on_area_2d_area_exited(area):
+	show()

@@ -29,7 +29,7 @@ func _physics_process(delta):
 
 
 func _on_area_2d_area_entered(area):
-	pass # Replace with function body.
+	position.x += 64
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	# Beast Player loses

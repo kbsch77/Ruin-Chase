@@ -40,9 +40,16 @@ wait_time = 1.75
 position = Vector2(-64, 0)
 scale = Vector2(0.12931, 1)
 curve = SubResource("Curve2D_jkf18")
+metadata/_edit_group_ = true
 
 [node name="ObstacleSpawnLocation" type="PathFollow2D" parent="ObstaclePath"]
 position = Vector2(0, 480)
 rotation = -1.5708
+
+[node name="TestObstacle" parent="." instance=ExtResource("6_nssqh")]
+position = Vector2(536, 512)
+
+[node name="TestObstacle2" parent="." instance=ExtResource("6_nssqh")]
+position = Vector2(792, 512)
 
 [connection signal="timeout" from="ObstacleTimer" to="." method="_on_obstacle_timer_timeout"]
