@@ -8,36 +8,36 @@
 
 [sub_resource type="Curve2D" id="Curve2D_jkf18"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 480, 0, 0, 0, 0, 0, 416, 0, 0, 0, 0, 0, 352, 0, 0, 0, 0, 0, 288, 0, 0, 0, 0, 0, 224, 0, 0, 0, 0, 0, 160, 0, 0, 0, 0, 0, 96)
+"points": PackedVector2Array(0, 0, 0, 0, 0, 480, 0, 0, 0, 0, 0, 416, 0, 0, 0, 0, 0, 352, 0, 0, 0, 0, 0, 288, 0, 0, 0, 0, 0, 224, 0, 0, 0, 0, 0, 160)
 }
-point_count = 7
+point_count = 6
 
 [node name="Main" type="Node"]
 script = ExtResource("1_ou1jb")
 obstacle_scene = ExtResource("6_nssqh")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(572, 320)
+position = Vector2(576, 336)
 
 [node name="Floor" parent="." instance=ExtResource("4_k13l2")]
-position = Vector2(568, 544)
+position = Vector2(576, 576)
 
 [node name="Ceiling" parent="." instance=ExtResource("4_k13l2")]
-position = Vector2(568, 24)
+position = Vector2(576, 56)
 
 [node name="Adventure Player" parent="." instance=ExtResource("2_kr5hq")]
-position = Vector2(544, 368)
+position = Vector2(488, 400)
 scale = Vector2(0.75, 0.75)
 
 [node name="Beast Player" parent="." instance=ExtResource("4_w2aus")]
-position = Vector2(872, 368)
+position = Vector2(880, 400)
 scale = Vector2(0.65, 0.65)
 
 [node name="ObstacleTimer" type="Timer" parent="."]
 wait_time = 1.75
 
 [node name="ObstaclePath" type="Path2D" parent="."]
-position = Vector2(-64, 0)
+position = Vector2(-56, 32)
 scale = Vector2(0.12931, 1)
 curve = SubResource("Curve2D_jkf18")
 metadata/_edit_group_ = true
@@ -45,11 +45,5 @@ metadata/_edit_group_ = true
 [node name="ObstacleSpawnLocation" type="PathFollow2D" parent="ObstaclePath"]
 position = Vector2(0, 480)
 rotation = -1.5708
-
-[node name="TestObstacle" parent="." instance=ExtResource("6_nssqh")]
-position = Vector2(536, 512)
-
-[node name="TestObstacle2" parent="." instance=ExtResource("6_nssqh")]
-position = Vector2(792, 512)
 
 [connection signal="timeout" from="ObstacleTimer" to="." method="_on_obstacle_timer_timeout"]

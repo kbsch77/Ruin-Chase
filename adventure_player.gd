@@ -16,17 +16,23 @@ func _physics_process(delta):
 	# Handle Jump.
 	if Input.is_action_just_pressed("adventure_player_jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-	if Input.is_action_pressed("adventure_player_slide"):
-		pass
+	
+	if Input.is_action_just_pressed("adventure_player_slide"):
+		look_at(position * Vector2.RIGHT)
+	if Input.is_action_just_released("adventure_player_slide"):
+		look_at(position * Vector2.RIGHT)
 		
 	move_and_slide()
 
 
 func _on_area_2d_area_entered(area):
-	hide()
-	
+	# moves player right by one square grid
 	position.x += 64
+	
+	# deletes obstacle
+	area.queue_free()
 
-# might need to change as a timed "grace period"
-func _on_area_2d_area_exited(area):
-	show()
+
+func _on_area_2d_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	# adventure player loses
+	pass # Replace with function body.

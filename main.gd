@@ -26,10 +26,6 @@ func _on_obstacle_timer_timeout():
 	# Set the obstacle's position to a random location.
 	obstacle.position = obstacle_spawn_location.position
 
-	# Choose the velocity for the obstacle.
-	var velocity =  250
-	#obstacle.linear_velocity = velocity.rotated(direction)
-
 	# Spawn the obstacle by adding it to the Main scene.
 	add_child(obstacle)
 
