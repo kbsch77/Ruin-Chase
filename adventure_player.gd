@@ -35,6 +35,7 @@ func _on_area_2d_area_entered(area):
 	area.queue_free()
 
 
-func _on_area_2d_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+func adventurer_touch_beast(_beast_player):
 	# adventure player loses
-	pass # Replace with function body.
+	print("It works") #It curruently dosen't
+	queue_free()

@@ -26,7 +26,7 @@ position = Vector2(576, 576)
 position = Vector2(576, 56)
 
 [node name="Adventure Player" parent="." instance=ExtResource("2_kr5hq")]
-position = Vector2(488, 400)
+position = Vector2(600, 400)
 scale = Vector2(0.75, 0.75)
 
 [node name="Beast Player" parent="." instance=ExtResource("4_w2aus")]
@@ -34,7 +34,7 @@ position = Vector2(880, 400)
 scale = Vector2(0.65, 0.65)
 
 [node name="ObstacleTimer" type="Timer" parent="."]
-wait_time = 1.75
+wait_time = 1.5
 
 [node name="ObstaclePath" type="Path2D" parent="."]
 position = Vector2(-56, 32)
