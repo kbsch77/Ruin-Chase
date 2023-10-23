@@ -18,9 +18,11 @@ func _physics_process(delta):
 		velocity.y = JUMP_VELOCITY
 	
 	if Input.is_action_just_pressed("adventure_player_slide"):
-		look_at(position * Vector2.RIGHT)
+		look_at(position * Vector2(-1, 90))
 	if Input.is_action_just_released("adventure_player_slide"):
-		look_at(position * Vector2.RIGHT)
+		look_at(position * Vector2(90, -1))
+
+		
 		
 	move_and_slide()
 

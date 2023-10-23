@@ -25,7 +25,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jklj3"]
-radius = 36.0
+radius = 49.0
 height = 212.0
 
 [node name="Adventure Player" type="CharacterBody2D"]
@@ -36,8 +36,8 @@ script = ExtResource("1_wv0jc")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-0.499999, -3.09944e-06)
-scale = Vector2(0.570313, 1.64063)
+position = Vector2(4.29153e-06, -3.09944e-06)
+scale = Vector2(0.78125, 1.64063)
 sprite_frames = SubResource("SpriteFrames_wvrok")
 animation = &"jumping"
 
