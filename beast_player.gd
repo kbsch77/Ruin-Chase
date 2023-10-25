@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+signal attack
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -700.0
@@ -34,4 +35,4 @@ func _on_area_2d_area_entered(area):
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	# Beast Player loses
-	pass
+	queue_free()
