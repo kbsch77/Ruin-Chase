@@ -29,14 +29,15 @@ func _physics_process(delta):
 
 
 func _on_area_2d_area_entered(area):
-	# moves player right by one square grid
-	position.x += 64
+	var area_name = area
+	if (area.name == "Obstacle"):
+		# moves player right by one square grid
+		position.x += 64
+		
+		# deletes obstacle
+		area.queue_free()
+		print(area)
 	
-	# deletes obstacle
-	area.queue_free()
-
-
-func adventurer_touch_beast(_beast_player):
-	# adventure player loses
-	print("It works") #It curruently dosen't
-	queue_free()
+	else: # beast player collision
+		print("It works")
+		hide()
