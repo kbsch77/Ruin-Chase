@@ -8,7 +8,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	# moves the obstacle
-	var velocity =  15
+	var velocity =  5
 	position.x += velocity
 
 func _on_visible_on_screen_notifier_2d_screen_exited():

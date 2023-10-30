@@ -1,7 +1,5 @@
 extends CharacterBody2D
 
-signal caught
-
 const SPEED = 300.0
 const JUMP_VELOCITY = -600.0
 
@@ -22,22 +20,22 @@ func _physics_process(delta):
 		look_at(position * Vector2(-1, 90))
 	if Input.is_action_just_released("adventure_player_slide"):
 		look_at(position * Vector2(90, -1))
-
 		
 		
 	move_and_slide()
 
 
 func _on_area_2d_area_entered(area):
-	var area_name = area
-	if (area.name == "Obstacle"):
-		# moves player right by one square grid
+	if (area.name == "BeastArea2D"): # beast player collision
+		# turns off Beast player obstacle hitbox
+		area.queue_free()
+		
+		# removes the adventure player
+		queue_free()
+	
+	else: #Obstacle collision
+	# moves player right by one square grid
 		position.x += 64
 		
 		# deletes obstacle
 		area.queue_free()
-		print(area)
-	
-	else: # beast player collision
-		print("It works")
-		hide()

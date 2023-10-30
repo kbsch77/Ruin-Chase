@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 signal attack
+signal lost
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -700.0
@@ -27,12 +28,18 @@ func _physics_process(delta):
 
 
 func _on_area_2d_area_entered(area):
-	# moves player right by one square grid
-	position.x += 64
+	if (area.name == "AdventureArea2D"):
+		# adventure player collision
+		attack.emit()
+	
+	else: #Obstacle collision
+		# moves player right by one square grid
+		position.x += 64
 		
-	# deletes obstacle
-	area.queue_free()
+		# deletes obstacle
+		area.queue_free()
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	# Beast Player loses
+	lost.emit()
 	queue_free()

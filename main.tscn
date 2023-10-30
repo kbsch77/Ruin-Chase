@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://3o6i128siadi"]
+[gd_scene load_steps=8 format=3 uid="uid://3o6i128siadi"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_ou1jb"]
 [ext_resource type="PackedScene" uid="uid://bh0llvtt314wb" path="res://adventure_player.tscn" id="2_kr5hq"]
 [ext_resource type="PackedScene" uid="uid://b370gslfjefx0" path="res://floor.tscn" id="4_k13l2"]
 [ext_resource type="PackedScene" uid="uid://cp86mgg3bxtti" path="res://beast_player.tscn" id="4_w2aus"]
+[ext_resource type="PackedScene" uid="uid://dvm5cjkf5qq30" path="res://hud.tscn" id="6_l8uoq"]
 [ext_resource type="PackedScene" uid="uid://j7hwpjcjukoh" path="res://obstacle.tscn" id="6_nssqh"]
 
 [sub_resource type="Curve2D" id="Curve2D_jkf18"]
@@ -30,7 +31,7 @@ position = Vector2(600, 400)
 scale = Vector2(0.75, 0.75)
 
 [node name="Beast Player" parent="." instance=ExtResource("4_w2aus")]
-position = Vector2(880, 400)
+position = Vector2(920, 400)
 scale = Vector2(0.65, 0.65)
 
 [node name="ObstacleTimer" type="Timer" parent="."]
@@ -46,4 +47,9 @@ metadata/_edit_group_ = true
 position = Vector2(0, 480)
 rotation = -1.5708
 
+[node name="Hud" parent="." instance=ExtResource("6_l8uoq")]
+
+[connection signal="attack" from="Beast Player" to="." method="_beast_player_win"]
+[connection signal="lost" from="Beast Player" to="." method="_adventure_player_win"]
 [connection signal="timeout" from="ObstacleTimer" to="." method="_on_obstacle_timer_timeout"]
+[connection signal="start_game" from="Hud" to="." method="_on_hud_start_game"]

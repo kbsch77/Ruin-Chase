@@ -1,3 +1,71 @@
-[gd_scene format=3 uid="uid://dvm5cjkf5qq30"]
+[gd_scene load_steps=2 format=3 uid="uid://dvm5cjkf5qq30"]
+
+[ext_resource type="Script" path="res://hud.gd" id="1_nef17"]
 
 [node name="Hud" type="CanvasLayer"]
+script = ExtResource("1_nef17")
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 66.0
+offset_right = 1.0
+offset_bottom = -440.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 100
+text = "Ruin Chase"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="AdventureControls" type="Label" parent="."]
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 208.0
+offset_right = -149.0
+offset_bottom = -260.0
+theme_override_font_sizes/font_size = 26
+text = "Adventure Player Controls
+
+W Key : Jump
+S Key : Slide"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BeastControls" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.971
+offset_left = 90.0
+offset_top = 208.0
+offset_right = -107.0
+offset_bottom = -241.208
+theme_override_font_sizes/font_size = 26
+text = "Beast Player Controls
+
+Up Arrow : Jump
+Down Arrow : Slide"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -80.0
+offset_right = 128.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 26
+text = "BEGIN CHASE"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
