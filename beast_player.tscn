@@ -18,7 +18,7 @@ animations = [{
 radius = 131.0
 height = 310.0
 
-[node name="Beast Player" type="CharacterBody2D"]
+[node name="BeastPlayer" type="CharacterBody2D"]
 position = Vector2(0, -156)
 floor_constant_speed = true
 floor_block_on_wall = false

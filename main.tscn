@@ -26,11 +26,19 @@ position = Vector2(576, 576)
 [node name="Ceiling" parent="." instance=ExtResource("4_k13l2")]
 position = Vector2(576, 56)
 
-[node name="Adventure Player" parent="." instance=ExtResource("2_kr5hq")]
+[node name="AdventurePlayer" parent="." instance=ExtResource("2_kr5hq")]
 position = Vector2(600, 400)
 scale = Vector2(0.75, 0.75)
 
-[node name="Beast Player" parent="." instance=ExtResource("4_w2aus")]
+[node name="AdventureStartPosition" type="Marker2D" parent="."]
+position = Vector2(600, 400)
+scale = Vector2(0.75, 0.75)
+
+[node name="BeastPlayer" parent="." instance=ExtResource("4_w2aus")]
+position = Vector2(920, 400)
+scale = Vector2(0.65, 0.65)
+
+[node name="BeastStartPosition" type="Marker2D" parent="."]
 position = Vector2(920, 400)
 scale = Vector2(0.65, 0.65)
 
@@ -49,7 +57,7 @@ rotation = -1.5708
 
 [node name="Hud" parent="." instance=ExtResource("6_l8uoq")]
 
-[connection signal="attack" from="Beast Player" to="." method="_beast_player_win"]
-[connection signal="lost" from="Beast Player" to="." method="_adventure_player_win"]
+[connection signal="attack" from="BeastPlayer" to="." method="_beast_player_win"]
+[connection signal="lost" from="BeastPlayer" to="." method="_adventure_player_win"]
 [connection signal="timeout" from="ObstacleTimer" to="." method="_on_obstacle_timer_timeout"]
 [connection signal="start_game" from="Hud" to="." method="_on_hud_start_game"]

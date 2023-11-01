@@ -42,4 +42,8 @@ func _on_area_2d_area_entered(area):
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	# Beast Player loses
 	lost.emit()
-	queue_free()
+	hide()
+
+func start(pos):
+	position = pos
+	show()

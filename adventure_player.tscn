@@ -28,7 +28,7 @@ animations = [{
 radius = 49.0
 height = 212.0
 
-[node name="Adventure Player" type="CharacterBody2D"]
+[node name="AdventurePlayer" type="CharacterBody2D"]
 position = Vector2(0, -106)
 floor_constant_speed = true
 floor_block_on_wall = false

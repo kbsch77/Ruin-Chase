@@ -3,7 +3,6 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$ObstacleTimer.start()
 	pass # Replace with function body.
 
 
@@ -31,10 +30,20 @@ func _on_obstacle_timer_timeout():
 
 func _adventure_player_win():
 	$ObstacleTimer.stop()
+	$Hud/Title.text = "Adventurer Escapes"
+	$Hud/Title.show()
+	$Hud/StartButton.text = "RUN AGAIN"
+	$Hud/StartButton.show()
 
 func _beast_player_win():
 	$ObstacleTimer.stop()
+	$Hud/Title.text = "Beast Feasts"
+	$Hud/Title.show()
+	$Hud/StartButton.text = "RUN AGAIN"
+	$Hud/StartButton.show()
 
 
 func _on_hud_start_game():
-	pass # Replace with function body.
+	$AdventurePlayer.start($AdventureStartPosition.position)
+	$BeastPlayer.start($BeastStartPosition.position)
+	$ObstacleTimer.start()

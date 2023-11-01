@@ -27,11 +27,8 @@ func _physics_process(delta):
 
 func _on_area_2d_area_entered(area):
 	if (area.name == "BeastArea2D"): # beast player collision
-		# turns off Beast player obstacle hitbox
-		area.queue_free()
-		
 		# removes the adventure player
-		queue_free()
+		hide()
 	
 	else: #Obstacle collision
 	# moves player right by one square grid
@@ -39,3 +36,7 @@ func _on_area_2d_area_entered(area):
 		
 		# deletes obstacle
 		area.queue_free()
+
+func start(pos):
+	position = pos
+	show()
