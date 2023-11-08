@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvm5cjkf5qq30"]
+[gd_scene load_steps=7 format=3 uid="uid://dvm5cjkf5qq30"]
 
 [ext_resource type="Script" path="res://hud.gd" id="1_nef17"]
+[ext_resource type="FontFile" uid="uid://dn1528a4babnh" path="res://hf-free-complete/hf-free-complete/compass-pro-v1.1/CompassPro.ttf" id="2_defsn"]
+[ext_resource type="FontFile" uid="uid://5qhtswaab038" path="res://hf-free-complete/hf-free-complete/expression-pro-v1.1/ExpressionPro.ttf" id="3_6fr7o"]
+
+[sub_resource type="Theme" id="Theme_hfdoo"]
+default_font = ExtResource("2_defsn")
+
+[sub_resource type="Theme" id="Theme_yk6pj"]
+
+[sub_resource type="Theme" id="Theme_mv86y"]
 
 [node name="Hud" type="CanvasLayer"]
 script = ExtResource("1_nef17")
@@ -15,6 +24,7 @@ offset_right = 1.0
 offset_bottom = -440.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_hfdoo")
 theme_override_font_sizes/font_size = 100
 text = "Ruin Chase"
 horizontal_alignment = 1
@@ -28,6 +38,8 @@ offset_left = 48.0
 offset_top = 208.0
 offset_right = -149.0
 offset_bottom = -260.0
+theme = SubResource("Theme_yk6pj")
+theme_override_fonts/font = ExtResource("2_defsn")
 theme_override_font_sizes/font_size = 26
 text = "Adventure Player Controls
 
@@ -45,6 +57,8 @@ offset_left = 90.0
 offset_top = 208.0
 offset_right = -107.0
 offset_bottom = -241.208
+theme = SubResource("Theme_mv86y")
+theme_override_fonts/font = ExtResource("2_defsn")
 theme_override_font_sizes/font_size = 26
 text = "Beast Player Controls
 
@@ -65,6 +79,7 @@ offset_right = 128.0
 offset_bottom = -20.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_6fr7o")
 theme_override_font_sizes/font_size = 26
 text = "BEGIN CHASE"
 
