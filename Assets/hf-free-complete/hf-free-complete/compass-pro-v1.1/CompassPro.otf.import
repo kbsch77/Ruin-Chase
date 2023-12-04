@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://r3ammovojrkn"
-path="res://.godot/imported/CompassPro.otf-fc5d826279353ed0152157be58c1ac90.fontdata"
+path="res://.godot/imported/CompassPro.otf-f4e0a8041f25ce07c4b1b91df6a208cf.fontdata"
 
 [deps]
 
-source_file="res://hf-free-complete/hf-free-complete/compass-pro-v1.1/CompassPro.otf"
-dest_files=["res://.godot/imported/CompassPro.otf-fc5d826279353ed0152157be58c1ac90.fontdata"]
+source_file="res://Assets/hf-free-complete/hf-free-complete/compass-pro-v1.1/CompassPro.otf"
+dest_files=["res://.godot/imported/CompassPro.otf-f4e0a8041f25ce07c4b1b91df6a208cf.fontdata"]
 
 [params]
 

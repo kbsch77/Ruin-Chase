@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://dvm5cjkf5qq30"]
 
 [ext_resource type="Script" path="res://hud.gd" id="1_nef17"]
-[ext_resource type="FontFile" uid="uid://dn1528a4babnh" path="res://hf-free-complete/hf-free-complete/compass-pro-v1.1/CompassPro.ttf" id="2_defsn"]
-[ext_resource type="FontFile" uid="uid://5qhtswaab038" path="res://hf-free-complete/hf-free-complete/expression-pro-v1.1/ExpressionPro.ttf" id="3_6fr7o"]
+[ext_resource type="FontFile" uid="uid://dn1528a4babnh" path="res://Assets/hf-free-complete/hf-free-complete/compass-pro-v1.1/CompassPro.ttf" id="2_defsn"]
+[ext_resource type="FontFile" uid="uid://5qhtswaab038" path="res://Assets/hf-free-complete/hf-free-complete/expression-pro-v1.1/ExpressionPro.ttf" id="3_6fr7o"]
 
 [sub_resource type="Theme" id="Theme_hfdoo"]
 default_font = ExtResource("2_defsn")

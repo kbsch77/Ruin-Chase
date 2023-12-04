@@ -1,24 +1,104 @@
-[gd_scene load_steps=5 format=3 uid="uid://bh0llvtt314wb"]
+[gd_scene load_steps=23 format=3 uid="uid://bh0llvtt314wb"]
 
-[ext_resource type="Texture2D" uid="uid://v0uuxydb7mw" path="res://icon.svg" id="1_frtcb"]
 [ext_resource type="Script" path="res://adventure_player.gd" id="1_wv0jc"]
+[ext_resource type="Texture2D" uid="uid://ch7aekwh6yisr" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Death/Crusader-1-Death mod_9.png" id="2_71vqo"]
+[ext_resource type="Texture2D" uid="uid://dl07r1ek67bfl" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Death/Crusader-1-Death mod_8.png" id="3_ep8st"]
+[ext_resource type="Texture2D" uid="uid://4n1hklfq18bi" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Death/Crusader-1-Death mod_7.png" id="4_ior85"]
+[ext_resource type="Texture2D" uid="uid://deyds2t8otptu" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Death/Crusader-1-Death mod_3.png" id="5_hq53p"]
+[ext_resource type="Texture2D" uid="uid://c6t5hfypro7wk" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Death/Crusader-1-Death mod_2.png" id="6_dydqy"]
+[ext_resource type="Texture2D" uid="uid://err3gxvennyy" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Death/Crusader-1-Death mod_1.png" id="7_khbf6"]
+[ext_resource type="Texture2D" uid="uid://c7jw6n8d6qqfa" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Jumping/Crusader-1-Jumping split_7.png" id="8_17hoo"]
+[ext_resource type="Texture2D" uid="uid://bhuc3nw6qu6jh" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Jumping/Crusader-1-Jumping split_6.png" id="9_q8xb7"]
+[ext_resource type="Texture2D" uid="uid://dr1vgd2r46ybm" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Jumping/Crusader-1-Jumping split_5.png" id="10_xtrc1"]
+[ext_resource type="Texture2D" uid="uid://onikkkpq1ng8" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Jumping/Crusader-1-Jumping split_4.png" id="11_jhkhv"]
+[ext_resource type="Texture2D" uid="uid://bb0rfgbm0r0a4" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Jumping/Crusader-1-Jumping split_3.png" id="12_ks311"]
+[ext_resource type="Texture2D" uid="uid://dotlr313x7es6" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Jumping/Crusader-1-Jumping split_2.png" id="13_o8f1l"]
+[ext_resource type="Texture2D" uid="uid://pybhd5rfkqg0" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Jumping/Crusader-1-Jumping split_1.png" id="14_x1jfh"]
+[ext_resource type="Texture2D" uid="uid://cbebblqlqt64f" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Running/Crusader-1-Running mod_6.png" id="15_g0de4"]
+[ext_resource type="Texture2D" uid="uid://cfqws2m64vmac" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Running/Crusader-1-Running mod_5.png" id="16_wwv4s"]
+[ext_resource type="Texture2D" uid="uid://qxk5mjrqmu0j" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Running/Crusader-1-Running mod_4.png" id="17_pjym5"]
+[ext_resource type="Texture2D" uid="uid://d03sydlrbid1p" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Running/Crusader-1-Running mod_3.png" id="18_2q5m6"]
+[ext_resource type="Texture2D" uid="uid://duyyigmigyyxp" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Running/Crusader-1-Running mod_2.png" id="19_q2juk"]
+[ext_resource type="Texture2D" uid="uid://dtrfj4141ahfa" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Running/Crusader-1-Running mod_1.png" id="20_0kcy0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wvrok"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_frtcb")
+"texture": ExtResource("2_71vqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ep8st")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ior85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hq53p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dydqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_khbf6")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_17hoo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_q8xb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xtrc1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jhkhv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ks311")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_o8f1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_x1jfh")
 }],
 "loop": true,
 "name": &"jumping",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_g0de4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_wwv4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_pjym5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_2q5m6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_q2juk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0kcy0")
+}],
 "loop": true,
 "name": &"running",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_x1jfh")
+}],
 "loop": true,
 "name": &"sliding",
 "speed": 5.0
@@ -39,7 +119,7 @@ metadata/_edit_group_ = true
 position = Vector2(4.29153e-06, -3.09944e-06)
 scale = Vector2(0.78125, 1.64063)
 sprite_frames = SubResource("SpriteFrames_wvrok")
-animation = &"jumping"
+animation = &"running"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_jklj3")

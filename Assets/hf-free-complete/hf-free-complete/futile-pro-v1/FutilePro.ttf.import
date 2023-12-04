@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dhlbna8m3k8bs"
-path="res://.godot/imported/FutilePro.ttf-7bcf1ffa4a2166e8aa97fd5af0b66036.fontdata"
+path="res://.godot/imported/FutilePro.ttf-de13401c6288d9cd3a1d126837a021b9.fontdata"
 
 [deps]
 
-source_file="res://hf-free-complete/hf-free-complete/futile-pro-v1/FutilePro.ttf"
-dest_files=["res://.godot/imported/FutilePro.ttf-7bcf1ffa4a2166e8aa97fd5af0b66036.fontdata"]
+source_file="res://Assets/hf-free-complete/hf-free-complete/futile-pro-v1/FutilePro.ttf"
+dest_files=["res://.godot/imported/FutilePro.ttf-de13401c6288d9cd3a1d126837a021b9.fontdata"]
 
 [params]
 

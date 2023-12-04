@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dymlmtyxe5ced"
-path="res://.godot/imported/MatchupPro.otf-b0677a4d613011fbe12c07804aa50622.fontdata"
+path="res://.godot/imported/MatchupPro.otf-8bd4b67b1f78a637f83f57f8d2c7cea7.fontdata"
 
 [deps]
 
-source_file="res://hf-free-complete/hf-free-complete/matchup-pro-v1.1/MatchupPro.otf"
-dest_files=["res://.godot/imported/MatchupPro.otf-b0677a4d613011fbe12c07804aa50622.fontdata"]
+source_file="res://Assets/hf-free-complete/hf-free-complete/matchup-pro-v1.1/MatchupPro.otf"
+dest_files=["res://.godot/imported/MatchupPro.otf-8bd4b67b1f78a637f83f57f8d2c7cea7.fontdata"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cv3cgnpicne0a"
-path="res://.godot/imported/FutilePro.svg-675c0a33a25151503e2795b415426800.ctex"
+path="res://.godot/imported/FutilePro.svg-10de9195e8ac6d03bf165517921ea8d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://hf-free-complete/hf-free-complete/futile-pro-v1/FutilePro.svg"
-dest_files=["res://.godot/imported/FutilePro.svg-675c0a33a25151503e2795b415426800.ctex"]
+source_file="res://Assets/hf-free-complete/hf-free-complete/futile-pro-v1/FutilePro.svg"
+dest_files=["res://.godot/imported/FutilePro.svg-10de9195e8ac6d03bf165517921ea8d3.ctex"]
 
 [params]
 

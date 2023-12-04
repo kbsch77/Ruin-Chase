@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c1li83c8s6wlf"
-path="res://.godot/imported/EquipmentPro.woff-f0635141277e2c30a85cc57ffaeb1c95.fontdata"
+path="res://.godot/imported/EquipmentPro.woff-31d143195226e21f6374d0fc39f4ecc9.fontdata"
 
 [deps]
 
-source_file="res://hf-free-complete/hf-free-complete/equipment-pro-v1.1/EquipmentPro.woff"
-dest_files=["res://.godot/imported/EquipmentPro.woff-f0635141277e2c30a85cc57ffaeb1c95.fontdata"]
+source_file="res://Assets/hf-free-complete/hf-free-complete/equipment-pro-v1.1/EquipmentPro.woff"
+dest_files=["res://.godot/imported/EquipmentPro.woff-31d143195226e21f6374d0fc39f4ecc9.fontdata"]
 
 [params]
 

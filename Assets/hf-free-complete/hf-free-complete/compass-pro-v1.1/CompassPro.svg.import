@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvt3608r7dsxe"
-path="res://.godot/imported/CompassPro.svg-774d50e638588187b05a33f633be70bc.ctex"
+path="res://.godot/imported/CompassPro.svg-ef01c4c5433a0ad6469c0b3cf2dd3869.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://hf-free-complete/hf-free-complete/compass-pro-v1.1/CompassPro.svg"
-dest_files=["res://.godot/imported/CompassPro.svg-774d50e638588187b05a33f633be70bc.ctex"]
+source_file="res://Assets/hf-free-complete/hf-free-complete/compass-pro-v1.1/CompassPro.svg"
+dest_files=["res://.godot/imported/CompassPro.svg-ef01c4c5433a0ad6469c0b3cf2dd3869.ctex"]
 
 [params]
 

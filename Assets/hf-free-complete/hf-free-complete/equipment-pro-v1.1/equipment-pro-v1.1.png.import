@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7lvn832ksxlf"
-path="res://.godot/imported/equipment-pro-v1.1.png-07bec91dcd95be7f1d11d1bc04311bf2.ctex"
+path="res://.godot/imported/equipment-pro-v1.1.png-48fe44ed430b4933b396c0950add7a0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://hf-free-complete/hf-free-complete/equipment-pro-v1.1/equipment-pro-v1.1.png"
-dest_files=["res://.godot/imported/equipment-pro-v1.1.png-07bec91dcd95be7f1d11d1bc04311bf2.ctex"]
+source_file="res://Assets/hf-free-complete/hf-free-complete/equipment-pro-v1.1/equipment-pro-v1.1.png"
+dest_files=["res://.godot/imported/equipment-pro-v1.1.png-48fe44ed430b4933b396c0950add7a0f.ctex"]
 
 [params]
 

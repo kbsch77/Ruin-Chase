@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nd75t21x8nvl"
-path="res://.godot/imported/matchup-pro-v1.1.png-eeee3f38dc7b4ccc5e4ab24550d1b99a.ctex"
+path="res://.godot/imported/matchup-pro-v1.1.png-4facf2f5647290002267f3d48adba8e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://hf-free-complete/hf-free-complete/matchup-pro-v1.1/matchup-pro-v1.1.png"
-dest_files=["res://.godot/imported/matchup-pro-v1.1.png-eeee3f38dc7b4ccc5e4ab24550d1b99a.ctex"]
+source_file="res://Assets/hf-free-complete/hf-free-complete/matchup-pro-v1.1/matchup-pro-v1.1.png"
+dest_files=["res://.godot/imported/matchup-pro-v1.1.png-4facf2f5647290002267f3d48adba8e9.ctex"]
 
 [params]
 

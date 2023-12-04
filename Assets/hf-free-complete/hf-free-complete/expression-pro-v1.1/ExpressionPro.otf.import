@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bl83ogyrilihj"
-path="res://.godot/imported/ExpressionPro.otf-f692447f2a54ae0ee8757a921ba2844b.fontdata"
+path="res://.godot/imported/ExpressionPro.otf-5dbf22b60a98bdcae6ae48b354651075.fontdata"
 
 [deps]
 
-source_file="res://hf-free-complete/hf-free-complete/expression-pro-v1.1/ExpressionPro.otf"
-dest_files=["res://.godot/imported/ExpressionPro.otf-f692447f2a54ae0ee8757a921ba2844b.fontdata"]
+source_file="res://Assets/hf-free-complete/hf-free-complete/expression-pro-v1.1/ExpressionPro.otf"
+dest_files=["res://.godot/imported/ExpressionPro.otf-5dbf22b60a98bdcae6ae48b354651075.fontdata"]
 
 [params]
 
