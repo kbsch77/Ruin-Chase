@@ -28,7 +28,7 @@ position = Vector2(576, 56)
 
 [node name="AdventurePlayer" parent="." instance=ExtResource("2_kr5hq")]
 position = Vector2(600, 400)
-scale = Vector2(0.75, 0.75)
+scale = Vector2(1.25, 1.25)
 
 [node name="AdventureStartPosition" type="Marker2D" parent="."]
 position = Vector2(600, 400)
@@ -36,7 +36,7 @@ scale = Vector2(0.75, 0.75)
 
 [node name="BeastPlayer" parent="." instance=ExtResource("4_w2aus")]
 position = Vector2(920, 400)
-scale = Vector2(0.65, 0.65)
+scale = Vector2(1.5, 1.5)
 
 [node name="BeastStartPosition" type="Marker2D" parent="."]
 position = Vector2(920, 400)

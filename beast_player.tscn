@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cp86mgg3bxtti"]
+[gd_scene load_steps=20 format=3 uid="uid://cp86mgg3bxtti"]
 
 [ext_resource type="Script" path="res://beast_player.gd" id="1_vhg03"]
 [ext_resource type="Texture2D" uid="uid://c5ijyqwm4kqo5" path="res://Assets/Crow Animations/Crow Animation Frames/crow_attack_frames/crow_attack_1.png" id="2_e57kn"]
@@ -83,9 +83,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_foule"]
-radius = 131.0
-height = 310.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qha6"]
+size = Vector2(80, 129)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y045u"]
+size = Vector2(80, 129)
 
 [node name="BeastPlayer" type="CharacterBody2D"]
 position = Vector2(0, -156)
@@ -95,22 +97,24 @@ script = ExtResource("1_vhg03")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-0.499989, 1)
-scale = Vector2(2.05469, 2.40625)
+position = Vector2(-0.999992, 2)
+scale = Vector2(4.2, 4.2)
 sprite_frames = SubResource("SpriteFrames_m5siw")
 animation = &"attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_foule")
+position = Vector2(1, 14.5)
+shape = SubResource("RectangleShape2D_0qha6")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(0, 1.99999)
-scale = Vector2(13.3, 15.3)
+position = Vector2(1, 14.5)
+scale = Vector2(4.1, 6.55)
 
 [node name="BeastArea2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BeastArea2D"]
-shape = SubResource("CapsuleShape2D_foule")
+position = Vector2(1, 13.5)
+shape = SubResource("RectangleShape2D_y045u")
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
 [connection signal="area_entered" from="BeastArea2D" to="." method="_on_area_2d_area_entered"]

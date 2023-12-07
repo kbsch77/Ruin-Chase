@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bh0llvtt314wb"]
+[gd_scene load_steps=24 format=3 uid="uid://bh0llvtt314wb"]
 
 [ext_resource type="Script" path="res://adventure_player.gd" id="1_wv0jc"]
 [ext_resource type="Texture2D" uid="uid://ch7aekwh6yisr" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Death/Crusader-1-Death mod_9.png" id="2_71vqo"]
@@ -104,29 +104,31 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jklj3"]
-radius = 49.0
-height = 212.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2s6t"]
+size = Vector2(57, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2mu1"]
+size = Vector2(56, 127)
 
 [node name="AdventurePlayer" type="CharacterBody2D"]
-position = Vector2(0, -106)
 floor_constant_speed = true
 floor_block_on_wall = false
 script = ExtResource("1_wv0jc")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(4.29153e-06, -3.09944e-06)
-scale = Vector2(0.78125, 1.64063)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_wvrok")
 animation = &"running"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_jklj3")
+position = Vector2(-1.5, 33)
+shape = SubResource("RectangleShape2D_b2s6t")
 
 [node name="AdventureArea2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AdventureArea2D"]
-shape = SubResource("CapsuleShape2D_jklj3")
+position = Vector2(-1, 33.5)
+shape = SubResource("RectangleShape2D_h2mu1")
 
 [connection signal="area_entered" from="AdventureArea2D" to="." method="_on_area_2d_area_entered"]
