@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cp86mgg3bxtti"]
+[gd_scene load_steps=22 format=3 uid="uid://cp86mgg3bxtti"]
 
 [ext_resource type="Script" path="res://beast_player.gd" id="1_vhg03"]
 [ext_resource type="Texture2D" uid="uid://c5ijyqwm4kqo5" path="res://Assets/Crow Animations/Crow Animation Frames/crow_attack_frames/crow_attack_1.png" id="2_e57kn"]
@@ -16,6 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://ciq5bv3ywg0ry" path="res://Assets/Crow Animations/Crow Animation Frames/crow_walk_frames/crow_walk_3.png" id="14_cvm5m"]
 [ext_resource type="Texture2D" uid="uid://c1frvarw3sic3" path="res://Assets/Crow Animations/Crow Animation Frames/crow_walk_frames/crow_walk_2.png" id="15_lrqpl"]
 [ext_resource type="Texture2D" uid="uid://lnq05ylsmpwf" path="res://Assets/Crow Animations/Crow Animation Frames/crow_walk_frames/crow_walk_1.png" id="16_h353q"]
+[ext_resource type="AudioStream" uid="uid://cb7gocnp3u16" path="res://Assets/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/SFX/Hit 1.wav" id="17_p50me"]
+[ext_resource type="AudioStream" uid="uid://dcd6t32a1akmw" path="res://Assets/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/SFX/Jump 1.wav" id="18_pb0hj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m5siw"]
 animations = [{
@@ -115,6 +117,12 @@ scale = Vector2(4.1, 6.55)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BeastArea2D"]
 position = Vector2(1, 13.5)
 shape = SubResource("RectangleShape2D_y045u")
+
+[node name="AttackSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_p50me")
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("18_pb0hj")
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
 [connection signal="area_entered" from="BeastArea2D" to="." method="_on_area_2d_area_entered"]

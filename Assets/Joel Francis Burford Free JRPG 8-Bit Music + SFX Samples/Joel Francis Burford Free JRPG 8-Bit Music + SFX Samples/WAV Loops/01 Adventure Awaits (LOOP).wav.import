@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://lcopm5apott4"
+path="res://.godot/imported/01 Adventure Awaits (LOOP).wav-f1096512521a62abe3e327f7b6ecf2bd.sample"
+
+[deps]
+
+source_file="res://Assets/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/WAV Loops/01 Adventure Awaits (LOOP).wav"
+dest_files=["res://.godot/imported/01 Adventure Awaits (LOOP).wav-f1096512521a62abe3e327f7b6ecf2bd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

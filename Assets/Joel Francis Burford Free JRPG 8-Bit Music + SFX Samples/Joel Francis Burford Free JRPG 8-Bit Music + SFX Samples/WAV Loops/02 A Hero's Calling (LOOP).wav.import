@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://hode87db2h2t"
+path="res://.godot/imported/02 A Hero's Calling (LOOP).wav-88e9a6bef927a5ef26435b0fd67d6895.sample"
+
+[deps]
+
+source_file="res://Assets/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/WAV Loops/02 A Hero's Calling (LOOP).wav"
+dest_files=["res://.godot/imported/02 A Hero's Calling (LOOP).wav-88e9a6bef927a5ef26435b0fd67d6895.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

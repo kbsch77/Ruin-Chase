@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cthwye518kclm"
+path="res://.godot/imported/Item or Coin 1.wav-553673345fa76ad6b83d9b5a67a8abec.sample"
+
+[deps]
+
+source_file="res://Assets/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/SFX/Item or Coin 1.wav"
+dest_files=["res://.godot/imported/Item or Coin 1.wav-553673345fa76ad6b83d9b5a67a8abec.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bh0llvtt314wb"]
+[gd_scene load_steps=25 format=3 uid="uid://bh0llvtt314wb"]
 
 [ext_resource type="Script" path="res://adventure_player.gd" id="1_wv0jc"]
 [ext_resource type="Texture2D" uid="uid://ch7aekwh6yisr" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Death/Crusader-1-Death mod_9.png" id="2_71vqo"]
@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://d03sydlrbid1p" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Running/Crusader-1-Running mod_3.png" id="18_2q5m6"]
 [ext_resource type="Texture2D" uid="uid://duyyigmigyyxp" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Running/Crusader-1-Running mod_2.png" id="19_q2juk"]
 [ext_resource type="Texture2D" uid="uid://dtrfj4141ahfa" path="res://Assets/Pixel Art Crusader/Pixel Art Crusader/Crusader 1 mod/Crusader-1-Running/Crusader-1-Running mod_1.png" id="20_0kcy0"]
+[ext_resource type="AudioStream" uid="uid://dcd6t32a1akmw" path="res://Assets/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/Joel Francis Burford Free JRPG 8-Bit Music + SFX Samples/SFX/Jump 1.wav" id="21_ga13r"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wvrok"]
 animations = [{
@@ -139,5 +140,8 @@ shape = SubResource("RectangleShape2D_b2s6t")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AdventureArea2D"]
 position = Vector2(-1, 33.5)
 shape = SubResource("RectangleShape2D_h2mu1")
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_ga13r")
 
 [connection signal="area_entered" from="AdventureArea2D" to="." method="_on_area_2d_area_entered"]

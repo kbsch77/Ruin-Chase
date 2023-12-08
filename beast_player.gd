@@ -23,6 +23,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("beast_player_jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		$AnimatedSprite2D.animation = "jumping"
+		$JumpSound.play()
 	
 	if Input.is_action_just_pressed("beast_player_slide"):
 		look_at(position * Vector2(1, -1))
@@ -36,6 +37,7 @@ func _on_area_2d_area_entered(area):
 	if (area.name == "AdventureArea2D"):
 		# adventure player collision
 		$AnimatedSprite2D.animation = "attack"
+		$AttackSound.play()
 		attack.emit()
 	
 	else: #Obstacle collision
