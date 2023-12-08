@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c55qsw6sfq7u4"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="floor_and_ceiling" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="floor_and_ceiling"]
+
+[node name="background_wall" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="background_wall"]
