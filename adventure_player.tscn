@@ -97,7 +97,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("12_ks311")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_o8f1l")
+}, {
+"duration": 1.0,
 "texture": ExtResource("14_x1jfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_o8f1l")
 }],
 "loop": true,
 "name": &"sliding",
@@ -119,7 +128,7 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_wvrok")
-animation = &"running"
+animation = &"sliding"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, 33)

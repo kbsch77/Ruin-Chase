@@ -12,15 +12,20 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
+	$AnimatedSprite2D.play()
+	if is_on_floor():
+		$AnimatedSprite2D.animation = "running"
+
 	# Handle Jump.
 	if Input.is_action_just_pressed("adventure_player_jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		$AnimatedSprite2D.animation = "jumping"
 	
 	if Input.is_action_just_pressed("adventure_player_slide"):
 		look_at(position * Vector2(-1, 90))
+		$AnimatedSprite2D.animation = "sliding"
 	if Input.is_action_just_released("adventure_player_slide"):
 		look_at(position * Vector2(90, -1))
-		
 		
 	move_and_slide()
 
