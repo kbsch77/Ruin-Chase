@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://3o6i128siadi"]
+[gd_scene load_steps=9 format=3 uid="uid://3o6i128siadi"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_ou1jb"]
 [ext_resource type="PackedScene" uid="uid://bh0llvtt314wb" path="res://adventure_player.tscn" id="2_kr5hq"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cp86mgg3bxtti" path="res://beast_player.tscn" id="4_w2aus"]
 [ext_resource type="PackedScene" uid="uid://dvm5cjkf5qq30" path="res://hud.tscn" id="6_l8uoq"]
 [ext_resource type="PackedScene" uid="uid://j7hwpjcjukoh" path="res://obstacle.tscn" id="6_nssqh"]
+[ext_resource type="PackedScene" uid="uid://c55qsw6sfq7u4" path="res://parallax_background.tscn" id="7_fx7my"]
 
 [sub_resource type="Curve2D" id="Curve2D_jkf18"]
 _data = {
@@ -21,9 +22,15 @@ obstacle_scene = ExtResource("6_nssqh")
 position = Vector2(576, 336)
 
 [node name="Floor" parent="." instance=ExtResource("4_k13l2")]
+visible = false
+light_mask = 4
+visibility_layer = 4
 position = Vector2(576, 576)
 
 [node name="Ceiling" parent="." instance=ExtResource("4_k13l2")]
+visible = false
+light_mask = 4
+visibility_layer = 4
 position = Vector2(576, 56)
 
 [node name="AdventurePlayer" parent="." instance=ExtResource("2_kr5hq")]
@@ -56,6 +63,8 @@ position = Vector2(0, 480)
 rotation = -1.5708
 
 [node name="Hud" parent="." instance=ExtResource("6_l8uoq")]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("7_fx7my")]
 
 [connection signal="attack" from="BeastPlayer" to="." method="_beast_player_win"]
 [connection signal="lost" from="BeastPlayer" to="." method="_adventure_player_win"]

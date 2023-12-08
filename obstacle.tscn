@@ -1,11 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://j7hwpjcjukoh"]
 
 [ext_resource type="Script" path="res://obstacle.gd" id="1_l7lc6"]
+[ext_resource type="Texture2D" uid="uid://c3os3er0waa0g" path="res://Assets/Dungeon Bricks/[64x64] Dungeon Obstacle Bricks Plain.png" id="2_7fjk0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0rhyf"]
 size = Vector2(72, 68)
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_kgr7o"]
 
 [node name="Obstacle" type="Area2D"]
 position = Vector2(271, 171)
@@ -17,9 +16,9 @@ metadata/_edit_group_ = true
 shape = SubResource("RectangleShape2D_0rhyf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2.24113e-05, 2.14577e-06)
-scale = Vector2(72, 68)
-texture = SubResource("CanvasTexture_kgr7o")
+position = Vector2(1.95503e-05, 6.55651e-06)
+scale = Vector2(1.125, 1.11475)
+texture = ExtResource("2_7fjk0")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2(-4.35114e-06, -6.55651e-07)
